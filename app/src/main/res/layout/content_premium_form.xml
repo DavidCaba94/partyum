@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".PremiumForm"
+    tools:showIn="@layout/activity_premium_form">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAlignment="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTextoFormPremium"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:gravity="center_horizontal"
+                android:text="Para enviar la solicitud para obtener tu cuenta Premium solo tienes que escribir tu correo electrónico y nos pondremos en contacto contigo"
+                android:visibility="invisible" />
+
+            <ProgressBar
+                android:id="@+id/pbFormPremium"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/etUsuarioPremium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name"
+                tools:layout_editor_absoluteX="108dp"
+                tools:layout_editor_absoluteY="531dp"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/etEmailPremium"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:ems="10"
+                android:hint="ejemplo@ejemplo.com"
+                android:inputType="textEmailAddress"
+                android:visibility="invisible"/>
+
+            <Button
+                android:id="@+id/btnFormPremium"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="50dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="Enviar"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

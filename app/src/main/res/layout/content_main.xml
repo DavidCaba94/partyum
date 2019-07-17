@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backlogin"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="315dp"
+            android:layout_height="90dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            app:srcCompat="@drawable/partyumlogo" />
+
+        <EditText
+            android:id="@+id/etUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="174dp"
+            android:backgroundTint="@android:color/background_light"
+            android:ems="10"
+            android:hint="Usuario..."
+            android:inputType="textPersonName"
+            android:textColor="@android:color/background_light"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="235dp"
+            android:backgroundTint="@android:color/background_light"
+            android:ems="10"
+            android:hint="Contraseña..."
+            android:inputType="textPassword"
+            android:textColor="@android:color/background_light"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/btnEntrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="395dp"
+            android:background="@color/colorAccent"
+            android:text="Entrar"
+            android:textColor="@android:color/background_light" />
+
+        <Button
+            android:id="@+id/btnRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="485dp"
+            android:background="@android:color/transparent"
+            android:text="Registrarse"
+            android:textColor="@android:color/background_light" />
+
+        <CheckBox
+            android:id="@+id/cbRecordar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="310dp"
+            android:buttonTint="@android:color/background_light"
+            android:text="Recordar credenciales"
+            android:textColor="@android:color/background_light" />
+
+        <TextView
+            android:id="@+id/tvErrorLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="143dp"
+            android:text="Usuario y/o contraseña incorrectos"
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="invisible" />
+
+        <ProgressBar
+            android:id="@+id/pbLogin"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

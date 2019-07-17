@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".LocalInfoActivity"
+    tools:showIn="@layout/activity_local_info">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/pbCargarLocalInfo"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/ivImagenLocal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:scaleType="centerInside"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/eventoitem" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="5dp">
+
+                <ImageButton
+                    android:id="@+id/ibMapaLocal"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="9"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/btnmapa" />
+
+                <ImageButton
+                    android:id="@+id/ibChatLocal"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="9"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/btnchatlocal" />
+
+                <ImageButton
+                    android:id="@+id/ibFavoritoLocal"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="9"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/btnnofav" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:id="@+id/tvDescripcionLocal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(Sin descripción)" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:id="@+id/ivDireccionLocalIcono"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/asterisco" />
+
+                <TextView
+                    android:id="@+id/tvDireccionLocalInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Direccion"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:id="@+id/ivTelefonoLocalIcono"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/asterisco" />
+
+                <TextView
+                    android:id="@+id/tvTelefonoLocal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(Sin teléfono de contacto)"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:id="@+id/ivCorreoLocalIcono"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/asterisco" />
+
+                <TextView
+                    android:id="@+id/tvCorreoLocal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(Sin correo de contacto)"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:id="@+id/ivCiudadLocalIcono"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/asterisco" />
+
+                <TextView
+                    android:id="@+id/tvCiudadLocal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Salamanca"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:id="@+id/ivWebLocalIcono"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/asterisco" />
+
+                <TextView
+                    android:id="@+id/tvWebLocal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(Sin página web)"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

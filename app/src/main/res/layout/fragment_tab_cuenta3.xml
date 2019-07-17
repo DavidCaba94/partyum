@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TabCuenta3Fragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAlignment="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTextoPremium"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="200dp"
+                android:gravity="center_horizontal"
+                android:text="No puedes administrar tus eventos si no eres Premium"
+                android:visibility="invisible" />
+
+            <ProgressBar
+                android:id="@+id/pbPremium"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btnPremium"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="200dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="Premium"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>

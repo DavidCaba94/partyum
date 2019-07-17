@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Partyum</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_registro">RegistroActivity</string>
+    <string name="title_activity_menu">MenuActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_notifications">NotificationsActivity</string>
+    <string name="title_activity_cuenta">CuentaActivity</string>
+    <string name="title_activity_nuevo_amigo">NuevoAmigoActivity</string>
+    <string name="title_activity_locales_favoritos">LocalesFavoritosActivity</string>
+    <string name="title_activity_local_info">LocalInfoActivity</string>
+    <string name="title_activity_premium_form">PremiumForm</string>
+    <string name="title_activity_mapa">MapaActivity</string>
+</resources>

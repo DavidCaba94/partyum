@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.david.partyum.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="Opciones"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_account"
+        android:orderInCategory="100"
+        android:title="Mi cuenta"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_cerrarSesion"
+        android:orderInCategory="100"
+        android:title="Cerrar sesión"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_notifications"
+        android:icon="@drawable/notifications"
+        android:orderInCategory="200"
+        android:title=""
+        app:showAsAction="always" />
+</menu>
